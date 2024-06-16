@@ -1,0 +1,55 @@
+# Mathematics: (Graph)
+
+1. Graph: 
+   - A mathematical structure consisting of two sets: Vertex set V(G) and Edge set E(G).
+   - The elements of the vertex set are called vertices.
+   - The elements of the edge set are called edges.
+   - The vertex is also called: node, point, zero simplex, zero cell.
+   - The edge is also called: line segment, adjacency, one simplex, one cell.
+   - #Remark: The vertex set of a graph can never be empty, but the edge set may be.
+
+2. Special Types of Edges:
+   - Self Loop: An edge in which the initial vertex is the same as the end vertex.
+   - Parallel Edges: Multiple edges (minimum 2) between the same pair of vertices.
+
+3. Types of Graphs:
+   - Simple Graph: A graph with no loops and no parallel edges.
+   - Multi-Graph: A graph that may contain parallel edges but no loops.
+   - Pseudograph: A graph that may contain both loops and parallel edges.
+   - Directed Graph (Digraph): A graph in which edges have a direction, indicated by an arrow.
+   - Undirected Graph: A graph in which edges have no direction.
+
+4. Degree of a Vertex:
+   - Degree: The number of edges incident to a vertex.
+   - In-degree (Digraphs): The number of edges directed into a vertex.
+   - Out-degree (Digraphs): The number of edges directed out of a vertex.
+   - #Remark: In an undirected graph, the sum of all vertex degrees is twice the number of edges.
+
+5. Subgraphs:
+   - Subgraph: A graph formed from a subset of the vertices and edges of a larger graph.
+   - Induced Subgraph: A subgraph formed by a subset of vertices and all edges connecting them in the original graph.
+   - Spanning Subgraph: A subgraph that includes all vertices of the original graph.
+
+6. Connectivity:
+   - Connected Graph: A graph in which there is a path between every pair of vertices.
+   - Disconnected Graph: A graph in which at least one pair of vertices has no path connecting them.
+   - Components: The connected subgraphs of a disconnected graph.
+
+7. Special Graphs:
+   - Complete Graph: A graph in which there is an edge between every pair of vertices.
+   - Cycle Graph: A graph that forms a single cycle.
+   - Path Graph: A graph that forms a single path.
+   - Bipartite Graph: A graph whose vertices can be divided into two disjoint sets such that no two vertices within the same set are adjacent.
+   - Complete Bipartite Graph: A bipartite graph in which every vertex of the first set is connected to every vertex of the second set.
+
+8. Graph Representations:
+   - Adjacency Matrix: A square matrix used to represent a finite graph, with matrix elements indicating the presence of edges.
+   - Adjacency List: A collection of lists or arrays, one for each vertex, containing the vertices adjacent to it.
+   - Incidence Matrix: A matrix that shows the relationship between vertices and edges.
+
+9. Graph Algorithms:
+   - Breadth-First Search (BFS): An algorithm for traversing or searching tree or graph data structures, starting at an arbitrary node and exploring all its neighbors at the present depth before moving on to nodes at the next depth level.
+   - Depth-First Search (DFS): An algorithm for traversing or searching tree or graph data structures, starting at an arbitrary node and exploring as far as possible along each branch before backtracking.
+   - Dijkstra's Algorithm: An algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks.
+   - Kruskal's Algorithm: An algorithm for finding the minimum spanning tree for a connected, weighted graph.
+   - Prim's Algorithm: An algorithm for finding the minimum spanning tree for a weighted undirected graph.
