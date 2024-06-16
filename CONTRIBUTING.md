@@ -18,8 +18,7 @@ git clone https://github.com/aditya26062003/mathematics.git
 
 ### 3. Create a Branch
 Create a new branch for your changes.
-```
-bash
+```bash
 git checkout -b my-new-feature
 ```
 
@@ -28,8 +27,7 @@ Make your changes to the codebase, add new features, fix bugs, or improve docume
 
 ### 5. Commit Your Changes
 Commit your changes with a clear and concise message.
-```
-bash
+```bash
 git add .
 git commit -m "Add feature X"
 ```
@@ -37,8 +35,7 @@ git commit -m "Add feature X"
 ### 6. Push to Your Fork
 Push your changes to your forked repository.
 
-```
-bash
+```bash
 git push origin my-new-feature
 ```
 
