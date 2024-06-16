@@ -1,6 +1,10 @@
 name: Build C++ Code
 
-on: [push, pull_request]
+on:
+  schedule:
+    - cron: '30 18 * * *'  # Runs at 12:00 AM IST (18:00 UTC)
+    # Adjust the cron timing based on your specific requirement
+    # Note: GitHub Actions uses UTC time for scheduled events
 
 jobs:
   build:
