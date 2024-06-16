@@ -1,23 +1,32 @@
-name: C/C++ CI
+name: Build and Run C++ Code
 
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+on: [push, pull_request]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: configure
-      run: ./configure
-    - name: make
-      run: make
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: sudo apt-get update && sudo apt-get install -y g++
+
+    - name: Compile C++ code
+      run: |
+        # Compile all C++ files in the specified directories
+        for dir in Mathematics Geometry Sorting Statistics numbers; do
+          for file in $(find $dir -name "*.cpp"); do
+            echo "Compiling $file"
+            g++ -o ${file%.cpp}.out $file
+          done
+        done
+
+    - name: Run executables
+      run: |
+        # Run all generated executables
+        for exec in $(find . -name "*.out"); do
+          echo "Running $exec"
+          ./$exec
+        done
