@@ -1,4 +1,4 @@
-name: Build and Run C++ Code
+name: Build C++ Code
 
 on: [push, pull_request]
 
