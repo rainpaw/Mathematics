@@ -63,7 +63,7 @@ Contributions are welcome! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) fi
 
 ## 🧑‍💻 Authors
 
-- **ADITYA SINGH** - *Initial work* - [aditya26062003](https://github.com/aditya26062003)
+- **ADITYA SINGH** - *Initial work* - [EchoSingh](https://github.com/EchoSingh)
 
 ## 📬 Contact
 
